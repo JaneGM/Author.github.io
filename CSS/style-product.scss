@@ -1,0 +1,113 @@
+@mixin li-3-8(){
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  height: 47px;
+  font-family: $font-family;
+  font-size: 14px;
+  color: #8c9299;
+  background-color: white;
+  padding-top: 18px;
+}
+.product{
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: space-around;
+  @include max-screen(677px){
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-1{
+    width: 370px;
+    height: 520px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    @include max-screen(1024px){
+      width: 300px;
+    }
+    @include max-screen(992px){
+      width: 250px;
+      margin-top: 100px;
+    }
+    @include max-screen(768px){
+      width: 240px;
+      margin: 50px 0;
+    }
+    nav{
+      background-color: #f8f9fb;
+      ul{
+        text-align: center;
+        list-style: none;
+
+        li:first-of-type{
+          height: 76px;
+          background-color: #485460;
+          color: white;
+          font-size: 26px;
+          font-family: $font-family;
+          padding-top: 26px;
+        }
+        li:nth-of-type(2){
+          height: 68px;
+          background-color: #f8f9fb;
+          font-family: $font-family;
+          font-size: 20px;
+          color: #485460;
+          padding-top: 28px;
+        }
+        li:nth-of-type(3){
+          @include li-3-8()
+        }
+        li:nth-of-type(4){
+          @include li-3-8()
+        }
+        li:nth-of-type(5){
+          @include li-3-8()
+        }
+        li:nth-of-type(6){
+          @include li-3-8()
+        }
+        li:nth-of-type(7){
+          @include li-3-8()
+        }
+        li:nth-of-type(8){
+          @include li-3-8()
+        }
+        li:last-of-type{
+          height: 98px;
+          background-color: #f8f9fb;
+          padding-top: 29px;
+          a{
+            height: 40px;
+            width: 170px;
+            border-radius: 3px;
+            background-color: #788492;
+            color: white;
+            font-size: 17px;
+            font-family: $font-family;
+            display: inline-block;
+            text-align: center;
+            padding: 8px;
+          }
+        }
+      }
+    }
+  }
+  .product-2{
+    @extend .product-1;
+    nav{
+      ul{
+        li:first-of-type{
+          background-color: #49cbcd;
+        }
+        li:last-of-type{
+          a{
+            background-color: #49cbcd;
+          }
+        }
+    }
+    }
+  }
+  .product-3{
+    @extend .product-1;
+  }
+}

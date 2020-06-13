@@ -1,0 +1,33 @@
+@import "style-header";
+@import "style-carousel";
+@import "style-team";
+@import "style-product";
+@import "style-footer";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap";
+@import "../fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css";
+@import "bootstrap-theme.css";
+@import "bootstrap.min.css";
+$font-family:'Open Sans', sans-serif;
+
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,147 @@
+
+/*карусель*/
+.section-carousel{
+  height: 567px;
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-carousel{
+  width: 100%;
+  margin: auto;
+}
+.block{
+   max-width: 1170px;
+  margin: auto;
+  @include max-screen(1024px){
+    max-width: 850px;
+  }
+  @include max-screen(992px){
+    max-width: 800px;
+  }
+  @include max-screen(768px){
+    max-width: 600px;
+  }
+  @include max-screen(414px){
+    max-width: 380px;
+  }
+  @include max-screen(375px){
+    max-width: 340px;
+  }
+  @include max-screen(320px){
+    max-width: 280px;
+  }
+ }
+.heading{
+  font-size: 63px;
+  text-align: center;
+  color: white;
+  margin-top: 140px;
+  font-family: 'Open Sans', sans-serif;
+  @include max-screen(992px){
+    font-size: 53px;
+    margin: 80px 0 0 0;
+  }
+  @include max-screen(678px){
+    font-size: 35px;
+    margin-top: 80px;
+  }
+  @include max-screen(320px){
+    margin-top: 40px;
+  }
+}
+.heading-info{
+  font-size: 23px;
+  text-align: center;
+  color: white;
+  margin-top: 45px;
+  font-family: 'Open Sans', sans-serif;
+  @include max-screen(678px){
+    font-size: 18px;
+  }
+}
+.item{
+  text-align: center;
+  margin-top: 58px;
+  @include max-screen(678px){
+    margin-top: 30px;
+  }
+}
+.item a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 23px;
+  border: white 3px solid;
+  border-radius: 5px;
+  padding: 21px 34px 21px 41px;
+  text-align: center;
+  display: inline-block;
+  @include max-screen(678px){
+    font-size: 18px;
+    padding: 15px 28px 15px 35px;
+  }
+}
+.owl-carousel .owl-nav button.owl-prev{
+  position: absolute;
+  left: 29px;
+  top: 300px;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  outline: none;
+  color: #49cbcd;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: white 1px solid;
+  border-radius: 50%;
+  @include max-screen(768px){
+    height: 30px;
+    width: 30px;
+  }
+}
+.owl-carousel .owl-nav button.owl-prev:before {
+  content: "\f053";
+}
+.owl-carousel .owl-nav button.owl-next{
+  position: absolute;
+  right: 29px;
+  top: 300px;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  outline: none;
+  color: #49cbcd;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border: white 1px solid;
+  border-radius: 50%;
+  @include max-screen(768px){
+    height: 30px;
+    width: 30px;
+  }
+}
+.owl-carousel .owl-nav button.owl-next:before{
+  content: "\f054";
+}
+.owl-carousel .owl-dots{
+  margin-right: 0;
+  margin-top: 10px;
+  text-align: center;
+}
+.owl-carousel button.owl-dot span{
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: gray;
+  border-radius: 20px;
+  margin-right: 10px;
+  text-align: center;
+}
+.owl-carousel button.owl-dot.active span{
+  background-color: black;
+
+}
+.owl-carousel .owl-dot.active{
+  outline: none;
+}
